@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Project - PISOLF</title>
+    <link rel="Shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="doc_control.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>Upload Your Project</h1>
+        <a href="main.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+    </header>
+
+    <main class="container">
+        <div class="uploader-card">
+            <form id="upload-form" action="/api/projects" method="POST">
+                <h2>Share Your Project</h2>
+                <p>Fill out the details below to upload your project files.</p>
+                
+                <div class="form-group">
+                    <label for="project-title">Project Title</label>
+                    <input type="text" id="project-title" name="project-title" placeholder="e.g., My Awesome App" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="language">Language</label>
+                    <select id="language" name="language">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="java">Java</option>
+                        <option value="plaintext">Plain Text</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="code-content">Code</label>
+                    <textarea id="code-content" name="code-content" rows="12" placeholder="Paste your code here..."></textarea>
+                </div>
+
+                <button type="submit" class="upload-btn">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Upload Project
+                </button>
+            </form>
+        </div>
+    </main>
+    <script src="doc_script.js"></script>
+</body>
+</html>

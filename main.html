@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PISOLF Home</title>
+    <link rel="Shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="control.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+  </head>
+  <body>
+    <header>
+        <a href="main.html" class="logo">PISOLF</a>
+        <nav class="selection">
+            <a class="prj" href="project.html">Project</a>
+            <a class="docs" href="doc.html">Docs</a>
+            <a class="About" href="about.html">About</a>
+        </nav>
+        <!-- Hamburger menu icon for mobile -->
+        <i class="fa-solid fa-bars fa-xl"></i>
+    </header>
+
+    <!-- Mobile Dropdown Menu (controlled by script.js) -->
+    <div class="dropwrapper">
+        <a class="prj" href="project.html">Project</a>
+        <a class="docs" href="doc.html">Docs</a>
+        <a class="About" href="about.html">About</a>
+    </div>
+
+    <main class="container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <h1>Your Hub for Code and Projects</h1>
+            <p>Find documentation, track projects, and share your work.</p>
+            <div id="swrapper" class="searchwrapper">
+                <input id="stext" type="text" placeholder="Search anything..." class="inbox" />
+                <i id="sicon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="hero-actions">
+                <a href="doc.html" class="btn btn-primary">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Upload a Project
+                </a>
+                <a href="project.html" class="btn btn-secondary">
+                    Browse Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Dashboard Cards -->
+        <section class="dashboard-grid">
+            <div class="rankboard card">
+                <i class="fa-solid fa-trophy"></i>
+                <h2>Rankings</h2>
+                <p>See top-rated projects and contributors.</p>
+            </div>
+            <div class="adsboard card">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>Announcements</h2>
+                <p>Check out the latest news and updates from the team.</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- This div seems unused but was in the original file -->
+    <div class="wrapper"></div> 
+    <script src="script.js"></script>
+  </body>
+</html>
